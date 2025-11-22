@@ -113,16 +113,17 @@ const DownloadButton = () => {
           pdfDoc.setPage(1);
           pdfDoc.setFillColor(255, 255, 255);
           pdfDoc.rect(145, 260, 100, 100, 'F');
+
           pdfDoc.setPage(2);
           pdfDoc.setFillColor(255, 255, 255);
-          pdfDoc.rect(145, 0, 100, 100, 'F');
+          pdfDoc.rect(145, 0, 100, 200, 'F');
 
-          const rectImageWidth = 240;
-          const rectImageHeight = 800;
+          const rectImageWidth = 300;
+          const rectImageHeight = 1000;
           pdfDoc.addImage(
             canvasContext.getImageData(
-              550,
-              980,
+              680,
+              1200,
               rectImageWidth,
               rectImageHeight
             ),
@@ -158,8 +159,8 @@ const DownloadButton = () => {
 
           pdfDoc.setPage(2);
           // pdfDoc.rect(189, 144, 13, 3);
-          pdfDoc.link(189, 144, 13, 3, {
-            url: 'https://www.linkedin.com/in/kernel-dang',
+          pdfDoc.link(189, 150, 13, 3, {
+            url: 'https://www.linkedin.com/in/kernel-dang/#recommendations',
           });
 
           pdfDoc.save('DangThanhNhan_CV.pdf');

@@ -9,7 +9,7 @@ export const Contact = () => {
     <div className="flex flex-col gap-2 text-left">
       <div className="flex gap-4">
         <img src={homeIcon} alt="Home icon" className="size-6" />
-        <div>17, 588 street, 9 district, HCM city</div>
+        <div>615/19 Tôn Đản, An Khê, Đà Nẵng</div>
       </div>
       <div className="flex gap-4">
         <img src={phoneIcon} alt="Phone icon" className="size-6"></img>

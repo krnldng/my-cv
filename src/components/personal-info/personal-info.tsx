@@ -74,9 +74,11 @@ export const PersonalInfo = () => {
         </Transition>
         <div className="flex flex-col items-start">
           <span className="font-medium text-nowrap">
-            Fullstack Software Engineer
+            Fullstack Software Engineer - (also Team Lead or SA)
           </span>
-          <span>.Net (C#), ReactJS, Angular, TypeScript, Azure</span>
+          <span className="text-nowrap">
+            .Net (C#), ReactJS, Angular, TypeScript, Azure
+          </span>
         </div>
       </div>
     </div>
