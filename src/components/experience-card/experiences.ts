@@ -8,7 +8,7 @@ export const experiences: Experience[] = [
       {
         name: "Confidental",
         description:
-          "This a digital transformation project to manage the budget and resources for Japanese government. The system help customer to manage the process from proposal, approval, budget allocation, expense tracking and reporting.",
+          "This a digital transformation project to manage the budget and resources for government. The system help customer to manage the process from proposal, approval, budget allocation, expense tracking and reporting.",
         teamSize: "40-50",
         role: "As Solution Architect, I have responsibilities to suggest technical solutions, design system architecture, review code quality, ensure best practices, and mentor team members to enhance their skills. Additionally, I actively participate in requirement analysis and collaborate closely with customers to deliver optimal solutions.",
         technology:
