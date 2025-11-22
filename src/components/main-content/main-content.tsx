@@ -1,22 +1,22 @@
-import { each, map } from 'lodash';
-import { Section } from '../section/section';
-import { ExperienceCard } from '../experience-card/experience-card';
-import { experiences } from '../experience-card/experiences';
-import tieIconUrl from '../../assets/tie.png';
-import informationIconUrl from '../../assets/information.png';
-import badgeIconUrl from '../../assets/badge.png';
-import graduateCapIconUrl from '../../assets/graduation-cap.png';
-import certificateIconUrl from '../../assets/certificate.png';
-import recommendationIconUrl from '../../assets/star.png';
-import languageIconUrl from '../../assets/language.png';
-import gearIconUrl from '../../assets/gear.png';
-import ibmBlockchainIconUrl from '../../assets/ibm_blockchain.png';
-import contactIconUrl from '../../assets/contact.png';
-import { Card } from '../card/card';
-import { ProgressBar } from '../progress-bar/progress-bar';
-import { Circle } from '../circle/circle';
-import { Contact } from '../contact/contact';
-import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { each, map } from "lodash";
+import { Section } from "../section/section";
+import { ExperienceCard } from "../experience-card/experience-card";
+import { experiences } from "../experience-card/experiences";
+import tieIconUrl from "../../assets/tie.png";
+import informationIconUrl from "../../assets/information.png";
+import badgeIconUrl from "../../assets/badge.png";
+import graduateCapIconUrl from "../../assets/graduation-cap.png";
+import certificateIconUrl from "../../assets/certificate.png";
+import recommendationIconUrl from "../../assets/star.png";
+import languageIconUrl from "../../assets/language.png";
+import gearIconUrl from "../../assets/gear.png";
+import ibmBlockchainIconUrl from "../../assets/ibm_blockchain.png";
+import contactIconUrl from "../../assets/contact.png";
+import { Card } from "../card/card";
+import { ProgressBar } from "../progress-bar/progress-bar";
+import { Circle } from "../circle/circle";
+import { Contact } from "../contact/contact";
+import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 
 export const MainContent = () => {
   const [inPropForProgressBars, setInPropForProgressBars] = useState(false);
@@ -77,12 +77,16 @@ export const MainContent = () => {
       <div className="flex flex-col gap-4 bg-[#f5f7f8aa;] p-4">
         <Section title="About me" iconUrl={informationIconUrl}>
           <div className="text-left">
-            I graduated from the University of Information Technology with major
-            in software engineering. My top skills include C# (dotNet),
-            TypeScript, ReactJS, NodeJS, SQL, Azure Cloud Platform... problem solving, critical
-            thinking, performance optimization, research, and the application of
-            new technologies. I have worked in various domains, including oil
-            and gas, healthcare, hospitality, and multimedia processing.
+            I graduated from the University of Information Technology with a major
+            in Software Engineering. Since then, I have worked across various
+            domains, including oil and gas, healthcare, hospitality, multimedia
+            processing, and digital transformation for enterprises.
+            <br></br>
+            My core competencies include .NET (C#), TypeScript, ReactJS, Angular, SQL,
+            Azure Cloud Platform, problem-solving, critical thinking, and
+            performance optimization. I am passionate about mentoring and
+            knowledge sharing. I focus on delivering high-quality
+            products while staying current with the latest technology trends.
           </div>
         </Section>
         <Section title="Education" iconUrl={graduateCapIconUrl}>
@@ -283,12 +287,9 @@ export const MainContent = () => {
         <Section title="Recommendation" iconUrl={recommendationIconUrl}>
           <div className="text-left">
             <div className="flex flex-row gap-2 items-center">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQEtE0TYuGN7PA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1713108856995?e=1743638400&v=beta&t=AA522_d1BQtajFrOLH-wyxNVSgG2tCttg97IZ2bc14Q"
-                loading="lazy"
-                alt="Nguyen Hoang profile picture"
-                className="rounded-full size-14"
-              ></img>
+              <div className="shrink-0 rounded-full size-14 bg-gradient-to-br from-blue-400 to-green-400 flex items-center justify-center text-lg font-semibold text-white shadow-sm">
+                NH
+              </div>
               <div className="flex flex-col items-start">
                 <span className="font-medium">Nguyen Hoang</span>
                 <span className="text-sm text-[#000000e6]">
@@ -296,7 +297,7 @@ export const MainContent = () => {
                 </span>
               </div>
             </div>
-            <div className={'mt-2 text-sm'}>
+            <div className={"mt-2 text-sm"}>
               Nhan’s dedication to his work is commendable. He consistently goes
               above and beyond to deliver high-quality results. As a mentor,
               Nhan invests time in guiding new team members, helping them grow

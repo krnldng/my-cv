@@ -1,7 +1,7 @@
 export interface Project {
   name: string;
   description: string;
-  teamSize?: number;
+  teamSize?: number | string;
   role?: string;
   technology?: string;
   breakToNewPage?: boolean;
