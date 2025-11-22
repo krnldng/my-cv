@@ -1,8 +1,8 @@
-import { ReactNode, useState } from 'preact/compat';
-import { Particles } from '../components/particles/particles';
-import { toCanvas } from 'html-to-image';
-import { jsPDF } from 'jspdf';
-import { ceil, floor } from 'lodash';
+import { ReactNode, useState } from "preact/compat";
+import { Particles } from "../components/particles/particles";
+import { toCanvas } from "html-to-image";
+import { jsPDF } from "jspdf";
+import { ceil, floor } from "lodash";
 
 interface LayoutProps {
   header?: ReactNode;
@@ -17,8 +17,8 @@ export const Layout = ({ header, content, bottom }: LayoutProps) => {
         className="flex-col bg-white relative"
         id="element-to-print"
         style={{
-          width: '210mm',
-          minWidth: '210mm',
+          width: "210mm",
+          minWidth: "210mm",
         }}
       >
         <div className="relative z-10">{header}</div>
@@ -26,9 +26,11 @@ export const Layout = ({ header, content, bottom }: LayoutProps) => {
         {bottom}
         <Particles className="absolute left-0 top-0 w-full h-full" />
       </div>
-      <div className="flex flex-row fixed bottom-2 right-2 z-10">
-        <DownloadButton></DownloadButton>
-      </div>
+      {localStorage.getItem("showDownloadButton") === "true" && (
+        <div className="flex flex-row fixed bottom-2 right-2 z-10">
+          <DownloadButton></DownloadButton>
+        </div>
+      )}
     </div>
   );
 };
@@ -36,8 +38,8 @@ export const Layout = ({ header, content, bottom }: LayoutProps) => {
 const createPdfDocument = () => {
   // Default export is a4 paper, portrait, using millimeters for units
   const doc = new jsPDF({
-    format: 'a4',
-    unit: 'mm',
+    format: "a4",
+    unit: "mm",
   });
 
   doc.setDisplayMode(1);
@@ -54,12 +56,12 @@ const DownloadButton = () => {
         try {
           setDownloading(true);
           var element = document.getElementById(
-            'element-to-print'
+            "element-to-print"
           ) as HTMLDivElement;
 
           // I see the quality of html-to-image is better than html2canvas
           const canvasElement = await toCanvas(element);
-          const canvasContext = canvasElement.getContext('2d')!;
+          const canvasContext = canvasElement.getContext("2d")!;
           const imageWidth = canvasElement.width;
           const imageHeight = canvasElement.height;
 
@@ -86,7 +88,7 @@ const DownloadButton = () => {
               );
             } else if (index === 1) {
               imageSectionHeight = floor(
-                (pdfPageHeight - pageMarginBottom - pageMarginTop - 17) * ratio
+                (pdfPageHeight - pageMarginBottom - pageMarginTop - 6) * ratio
               );
             } else {
               imageSectionHeight = floor(
@@ -112,11 +114,11 @@ const DownloadButton = () => {
 
           pdfDoc.setPage(1);
           pdfDoc.setFillColor(255, 255, 255);
-          pdfDoc.rect(145, 260, 100, 100, 'F');
+          pdfDoc.rect(145, 260, 100, 100, "F");
 
           pdfDoc.setPage(2);
           pdfDoc.setFillColor(255, 255, 255);
-          pdfDoc.rect(145, 0, 100, 200, 'F');
+          pdfDoc.rect(145, 0, 100, 200, "F");
 
           const rectImageWidth = 300;
           const rectImageHeight = 1000;
@@ -139,33 +141,33 @@ const DownloadButton = () => {
 
           // pdfDoc.rect(145, 0, 65, 8);
           pdfDoc.link(145, 0, 65, 8, {
-            url: 'https://kernel-dang.github.io/my-cv/',
+            url: "https://kernel-dang.github.io/my-cv/",
           });
 
           // pdfDoc.rect(155, 92, 50, 6);
           pdfDoc.link(155, 92, 50, 6, {
-            url: 'mailto:kerneldang@gmail.com',
+            url: "mailto:kerneldang@gmail.com",
           });
 
           // pdfDoc.rect(155, 100, 50, 6);
           pdfDoc.link(155, 100, 50, 6, {
-            url: 'https://www.facebook.com/kernel.dang',
+            url: "https://www.facebook.com/kernel.dang",
           });
 
           // pdfDoc.rect(155, 107, 50, 6);
           pdfDoc.link(155, 107, 50, 6, {
-            url: 'https://www.linkedin.com/in/kernel-dang',
+            url: "https://www.linkedin.com/in/kernel-dang",
           });
 
           pdfDoc.setPage(2);
           // pdfDoc.rect(189, 144, 13, 3);
           pdfDoc.link(189, 150, 13, 3, {
-            url: 'https://www.linkedin.com/in/kernel-dang/#recommendations',
+            url: "https://www.linkedin.com/in/kernel-dang/#recommendations",
           });
 
-          pdfDoc.save('DangThanhNhan_CV.pdf');
+          pdfDoc.save("DangThanhNhan_CV.pdf");
         } catch (error) {
-          console.error('oops, something went wrong!', error);
+          console.error("oops, something went wrong!", error);
         } finally {
           setDownloading(false);
         }

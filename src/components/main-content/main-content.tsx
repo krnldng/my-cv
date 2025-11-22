@@ -1,4 +1,4 @@
-import { each, map } from "lodash";
+import { each, filter, map } from "lodash";
 import { Section } from "../section/section";
 import { ExperienceCard } from "../experience-card/experience-card";
 import { experiences } from "../experience-card/experiences";
@@ -77,15 +77,15 @@ export const MainContent = () => {
       <div className="flex flex-col gap-4 bg-[#f5f7f8aa;] p-4">
         <Section title="About me" iconUrl={informationIconUrl}>
           <div className="text-left">
-            I graduated from the University of Information Technology with a major
-            in Software Engineering. Since then, I have worked across various
-            domains, including oil and gas, healthcare, hospitality, multimedia
-            processing, and digital transformation for enterprises.
+            I graduated from the University of Information Technology with a
+            major in Software Engineering. Since then, I have worked across
+            various domains, including oil and gas, healthcare, hospitality,
+            multimedia processing, and digital transformation for enterprises.
             <br></br>
-            My core competencies include .NET (C#), TypeScript, ReactJS, Angular, SQL,
-            Azure Cloud Platform, problem-solving, critical thinking, and
-            performance optimization. I am passionate about mentoring and
-            knowledge sharing. I focus on delivering high-quality
+            My core competencies include .NET (C#), TypeScript, ReactJS,
+            Angular, SQL, Azure Cloud Platform, problem-solving, critical
+            thinking, and performance optimization. I am passionate about
+            mentoring and knowledge sharing. I focus on delivering high-quality
             products while staying current with the latest technology trends.
           </div>
         </Section>
@@ -133,9 +133,14 @@ export const MainContent = () => {
         </Section>
         <Section title="Experience" iconUrl={tieIconUrl}>
           <div className="flex flex-col gap-6">
-            {map(experiences, (Experience) => {
-              return <ExperienceCard Experience={Experience}></ExperienceCard>;
-            })}
+            {map(
+              filter(experiences, (i) => !i.hidden),
+              (experience) => {
+                return (
+                  <ExperienceCard Experience={experience}></ExperienceCard>
+                );
+              }
+            )}
           </div>
         </Section>
       </div>

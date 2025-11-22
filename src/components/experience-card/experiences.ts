@@ -2,6 +2,30 @@ import { Experience } from "../../model/experience";
 
 export const experiences: Experience[] = [
   {
+    companyName: "Restaff",
+    period: "5/2020 - 6/2024, 6/2025 - 12/2015",
+    projects: [
+      {
+        name: "Wellbarrier",
+        description:
+          "Wellbarrier is a comprehensive well integrity management solution that spans the entire well life cycle. It ensures a clear and common understanding of risk among all stakeholders. Wellbarrier empowers engineers in the oil and gas field by enabling them to visualize, communicate, and document well structures efficiently. Managers can monitor well health using products like Risk Management, Well Barrier, Verification, and Monitoring. The project is base on multi-tenant architecture",
+        teamSize: 43,
+        role: "As a Technical Advisor, I work closely with customers to break down requirements, ensure that the product aligns with reality, provide estimations, write documents, train new team members, and offer advice to overcome obstacles.",
+        technology:
+          "ASP.NET Restful API, Azure, Dapper, SQL Server, React/Preact, D3.js, Snabdom, NodeJS",
+      },
+      {
+        name: "Uphead - CRM",
+        description:
+          "Uphead - CRM is a CRM system offers features such as customer-contact management, purchase/sale order management,... It also includes reporting and analytics capabilities to help agencies monitor their performance and make data-driven decisions.",
+        teamSize: 5,
+        role: "I am fully responsible for migrating the legacy MVC application to modern Angular 20 framework. I applied many coding design patterns to ensure the code base is readable and maintainable, leverage almost modern features of Angular framework.",
+        technology:
+          "ASP.NET Restful API, Azure, SQL Server, Angular 20, PrimeNG",
+      },
+    ],
+  },
+  {
     companyName: "CMC Global",
     period: "10/2024 - 6/2025",
     projects: [
@@ -13,30 +37,6 @@ export const experiences: Experience[] = [
         role: "As Solution Architect, I have responsibilities to suggest technical solutions, design system architecture, review code quality, ensure best practices, and mentor team members to enhance their skills. Additionally, I actively participate in requirement analysis and collaborate closely with customers to deliver optimal solutions.",
         technology:
           "ASP.NET Restful API, Azure, SQL Server, React, and Beef Framework",
-      },
-    ],
-  },
-  {
-    companyName: "Restaff",
-    period: "5/2020 - 6/2024, 6/2025 - 12/2015",
-    projects: [
-      {
-        name: "Wellbarrier",
-        description:
-          "Wellbarrier is a comprehensive well integrity management solution that spans the entire well life cycle. It ensures a clear and common understanding of risk among all stakeholders. Wellbarrier empowers engineers in the oil and gas field by enabling them to visualize, communicate, and document well structures efficiently. Managers can monitor well health using products like Risk Management, Well Barrier, Verification, and Monitoring. The project is base on multi-tenant architecture",
-        teamSize: 43,
-        role: "As a Technical Advisor, I work closely with customers to break down requirements, ensure that the product aligns with reality, provide estimations, write documents, train new team members, and offer advice to overcome obstacles. As a Fullstack Developer, I adhere to SOLID principles when writing code and frequently tackle challenging problems.",
-        technology:
-          "ASP.NET Restful API, Azure, Dapper, SQL Server, React/Preact, D3.js, Snabdom, NodeJS",
-      },
-      {
-        name: "Uphead - CRM",
-        description:
-          "Uphead - CRM is a CRM system designed for staffing agencies to manage their clients, candidates, job orders, placements, and streamline their recruitment processes. The system offers features such as contact management, purchase/sale order management. It also includes reporting and analytics capabilities to help agencies monitor their performance and make data-driven decisions.",
-        teamSize: 5,
-        role: "I am fully responsible for migrating the legacy MVC application to modern Angular 20 framework. I applied many coding design patterns to ensure the code base is readable and maintainable, leverage almost modern features of Angular framework.",
-        technology:
-          "ASP.NET Restful API, Azure, SQL Server, Angular 20, PrimeNG",
       },
     ],
   },
@@ -118,6 +118,7 @@ export const experiences: Experience[] = [
   {
     companyName: "Global Cyber Soft",
     period: "6/2016 - 1/2017",
+    hidden: true,
     projects: [
       {
         name: "Trainee in GCS as Bridge Software Engineer",
