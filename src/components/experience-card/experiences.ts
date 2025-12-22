@@ -2,18 +2,9 @@ import { Experience } from "../../model/experience";
 
 export const experiences: Experience[] = [
   {
-    companyName: "Restaff",
-    period: "5/2020 - 6/2024, 6/2025 - 12/2015",
+    companyName: "Restaff (Freelance)",
+    period: "6/2025 - Present",
     projects: [
-      {
-        name: "Wellbarrier",
-        description:
-          "Wellbarrier is a comprehensive well integrity management solution that spans the entire well life cycle. It ensures a clear and common understanding of risk among all stakeholders. Wellbarrier empowers engineers in the oil and gas field by enabling them to visualize, communicate, and document well structures efficiently. Managers can monitor well health using products like Risk Management, Well Barrier, Verification, and Monitoring. The project is base on multi-tenant architecture",
-        teamSize: 43,
-        role: "As a Technical Advisor, I work closely with customers to break down requirements, ensure that the product aligns with reality, provide estimations, write documents, train new team members, and offer advice to overcome obstacles.",
-        technology:
-          "ASP.NET Restful API, Azure, Dapper, SQL Server, React/Preact, D3.js, Snabdom, NodeJS",
-      },
       {
         name: "Uphead - CRM",
         description:
@@ -41,13 +32,28 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    companyName: "Restaff",
+    period: "5/2020 - 6/2024",
+    projects: [
+      {
+        name: "Wellbarrier",
+        description:
+          "Wellbarrier is a comprehensive well integrity management solution that spans the entire well life cycle. It ensures a clear and common understanding of risk among all stakeholders. Wellbarrier empowers engineers in the oil and gas field by enabling them to visualize, communicate, and document well structures efficiently. Managers can monitor well health using products like Risk Management, Well Barrier, Verification, and Monitoring. The project is base on multi-tenant architecture",
+        teamSize: 43,
+        role: "As a Technical Advisor, I work closely with customers to break down requirements, ensure that the product aligns with reality, provide estimations, write documents, train new team members, and offer advice to overcome obstacles.",
+        technology:
+          "ASP.NET Restful API, Azure, Dapper, SQL Server, React/Preact, D3.js, Snabdom, NodeJS",
+      },
+    ],
+  },
+  {
     companyName: "KMS Technology",
     period: "6/2019 - 5/2020",
     projects: [
       {
         name: "Cin7 - Thunderstorm",
         description: `Thunderstorm is a migration project for customer Cin7 which focus on migrating their database to new architecture. Because of scaling system for more tenants, the existing database can not adapt with this requirement. We investigate and propose solution to migrate database without effect to current system`,
-        role: "Backend Developer",
+        role: "As Backend Developer, I am responsible for developing new features, fixing bugs, and optimizing performance. I also collaborate closely with frontend developers to ensure seamless integration between the backend and frontend components.",
         teamSize: 12,
         technology: "ASP.NET Core, Restful API, SqlKata, MySQL, AWS",
       },
@@ -68,7 +74,7 @@ export const experiences: Experience[] = [
       {
         name: "Christina’s",
         description: `Christina’s a fully-integrated social travel platform ranked number 1 on Trip Advisor. Christina’s provides the best local experiences for travelers from around the world`,
-        role: "Fullstack developer",
+        role: "As Fullstack developer, I am responsible for developing both frontend and backend features, ensuring seamless integration between the two. I work closely with the design team to implement user-friendly interfaces and with the backend team to ensure efficient data handling and processing.",
         teamSize: 21,
         technology:
           "ReactJS, Python (Django), Nodejs, Postgress, Circle CI, Heroku",
@@ -82,8 +88,8 @@ export const experiences: Experience[] = [
       {
         name: "Quality Control Tool",
         description: `This project is built to control quality of blood by receive analysis signals to statistic and visualize data on some kinds of chart to control the indexes of quality`,
-        role: "Team Leader, Full-stack Developer",
-        teamSize: 8,
+        role: "As Team Leader, Full-stack Developer, I am responsible for leading a team of 5 members, managing project timelines, and ensuring successful delivery. Additionally, I actively contribute as a full-stack developer, working on both frontend and backend tasks to meet project requirements.",
+        teamSize: 5,
         technology: "ASP.Net MVC, EF, jQuery, HTML, CSS, MSSQL",
       },
       {
@@ -96,7 +102,7 @@ export const experiences: Experience[] = [
       {
         name: "MR_Sequence",
         description: ` This project is a part of MRI system, it process to setting pulse sequences and pulsed field gradients, resulting in a particular image appearance`,
-        role: "C++ Developer, Tester",
+        role: "As C++ Developer, Tester, I am responsible for developing and testing the pulse sequence settings and pulsed field gradients to ensure accurate image appearance in the MRI system.",
         teamSize: 14,
         technology: "C++, C# .NET, DCMTK, MSSQL",
       },
@@ -109,7 +115,7 @@ export const experiences: Experience[] = [
       {
         name: "BeRich",
         description: `Hybrid mobile application, used to manage income, expense, asset and debt, help user to control amount and clear finance in the future`,
-        role: "Fullstack Developer",
+        role: "As a Freelance Developer, I am responsible for developing the hybrid mobile application using Angular and Ionic frameworks. I work closely with the client to understand their requirements and deliver a user-friendly and efficient solution.",
         teamSize: 2,
         technology: "Angular, Ionic, ASP.NET Core",
       },
@@ -130,6 +136,7 @@ export const experiences: Experience[] = [
   {
     companyName: "Bachelor thesis",
     period: "1/2017 - 6/2017",
+    hidden: true,
     projects: [
       {
         name: "Detect Calcification over Mammography",

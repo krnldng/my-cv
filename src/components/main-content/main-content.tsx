@@ -95,6 +95,15 @@ export const MainContent = () => {
               <Card>
                 <div className="flex flex-col">
                   <div className="font-semibold">
+                    12/2025 - 2027: Studying Master of Software Engineering in
+                    AI
+                  </div>
+                  <div className="font-medium">FPT University</div>
+                </div>
+              </Card>
+              <Card>
+                <div className="flex flex-col">
+                  <div className="font-semibold">
                     2012 - 2017: Studying software engineering
                   </div>
                   <div className="font-medium">
@@ -132,7 +141,7 @@ export const MainContent = () => {
           </div>
         </Section>
         <Section title="Experience" iconUrl={tieIconUrl}>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
             {map(
               filter(experiences, (i) => !i.hidden),
               (experience) => {

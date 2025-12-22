@@ -84,11 +84,11 @@ const DownloadButton = () => {
               imageSectionHeight = imageHeight - previousImageHeight; // remain content
             } else if (index === 0) {
               imageSectionHeight = floor(
-                (pdfPageHeight - pageMarginBottom - 12) * ratio
+                (pdfPageHeight - pageMarginBottom - 1) * ratio
               );
             } else if (index === 1) {
               imageSectionHeight = floor(
-                (pdfPageHeight - pageMarginBottom - pageMarginTop - 6) * ratio
+                (pdfPageHeight - pageMarginBottom - pageMarginTop - 4) * ratio
               );
             } else {
               imageSectionHeight = floor(
@@ -114,7 +114,7 @@ const DownloadButton = () => {
 
           pdfDoc.setPage(1);
           pdfDoc.setFillColor(255, 255, 255);
-          pdfDoc.rect(145, 260, 100, 100, "F");
+          pdfDoc.rect(145, 250, 100, 100, "F");
 
           pdfDoc.setPage(2);
           pdfDoc.setFillColor(255, 255, 255);
@@ -125,7 +125,7 @@ const DownloadButton = () => {
           pdfDoc.addImage(
             canvasContext.getImageData(
               680,
-              1200,
+              1180,
               rectImageWidth,
               rectImageHeight
             ),
