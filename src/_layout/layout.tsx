@@ -26,12 +26,12 @@ export const Layout = ({ header, content, bottom }: LayoutProps) => {
         {bottom}
         <Particles className="absolute left-0 top-0 w-full h-full" />
       </div>
-      {localStorage.getItem("showDownloadButton") === "true" && (
-        <div className="flex flex-row fixed bottom-2 right-2 z-10">
+      <div className="flex flex-row fixed bottom-2 right-2 z-10">
+        {localStorage.getItem("showDownloadButton") === "true" && (
           <DownloadButton></DownloadButton>
-          <ToggleParticles></ToggleParticles>
-        </div>
-      )}
+        )}
+        <ToggleParticles></ToggleParticles>
+      </div>
     </div>
   );
 };
