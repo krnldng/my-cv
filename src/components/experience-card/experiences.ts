@@ -3,7 +3,7 @@ import { Experience } from "../../model/experience";
 export const experiences: Experience[] = [
   {
     companyName: "Restaff (Freelance)",
-    period: "6/2025 - Present",
+    period: "6/2025 - 2/2026",
     projects: [
       {
         name: "Uphead - CRM",
@@ -97,20 +97,21 @@ export const experiences: Experience[] = [
         description: ` Create, manage, and stream media content to remote server with multi device and cross platform`,
         role: `C++ Developer, Designer, BA`,
         teamSize: 3,
-        technology: "C++, ffmpeg, Qt framework",
+        technology: "C++, ffmpeg, Qt framework, WPF",
       },
       {
         name: "MR_Sequence",
         description: ` This project is a part of MRI system, it process to setting pulse sequences and pulsed field gradients, resulting in a particular image appearance`,
         role: "As C++ Developer, Tester, I am responsible for developing and testing the pulse sequence settings and pulsed field gradients to ensure accurate image appearance in the MRI system.",
         teamSize: 14,
-        technology: "C++, C# .NET, DCMTK, MSSQL",
+        technology: "C++, C# .NET, DCMTK, MSSQL, Windows Forms, WPF",
       },
     ],
   },
   {
     companyName: "Freelancer",
     period: "11/2018 - 5/2019",
+    hidden: true,
     projects: [
       {
         name: "BeRich",
@@ -136,12 +137,12 @@ export const experiences: Experience[] = [
   {
     companyName: "Bachelor thesis",
     period: "1/2017 - 6/2017",
-    hidden: true,
     projects: [
       {
         name: "Detect Calcification over Mammography",
         description:
-          "Apply image process technique to detect area of calcification of mammography. In addition, apply DICOM standard to integrate with medical system. OpenCV, DCMTK, QT framework is base technologies",
+          "Apply image process technique to detect area of calcification of mammography.",
+        technology: "DICOM standard, OpenCV, DCMTK, QT framework, WPF",
       },
     ],
   },

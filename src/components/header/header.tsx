@@ -10,7 +10,7 @@ export const Header = () => {
     <div className={classNames('flex', 'flex-row', container)}>
       <Avatar></Avatar>
       <PersonalInfo></PersonalInfo>
-      <a href="https://kernel-dang.github.io/my-cv/" target="_blank">
+      <a href="https://krnldng.github.io/my-cv/" target="_blank">
         <div
           className={classNames(
             'absolute right-0 top-0 pt-1 px-4 border- bg-[#16a084a4] text-white flex flex-row gap-2',
@@ -18,7 +18,7 @@ export const Header = () => {
           )}
         >
           <img src={githubIconUrl} className="size-6"></img>
-          <span>kernel-dang.github.io/my-cv</span>
+          <span>krnldng.github.io/my-cv</span>
         </div>
       </a>
     </div>

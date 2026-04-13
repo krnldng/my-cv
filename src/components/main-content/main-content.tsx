@@ -141,7 +141,7 @@ export const MainContent = () => {
           </div>
         </Section>
         <Section title="Experience" iconUrl={tieIconUrl}>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-4">
             {map(
               filter(experiences, (i) => !i.hidden),
               (experience) => {

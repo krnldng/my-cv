@@ -85,7 +85,7 @@ const DownloadButton = () => {
               imageSectionHeight = imageHeight - previousImageHeight; // remain content
             } else if (index === 0) {
               imageSectionHeight = floor(
-                (pdfPageHeight - pageMarginBottom - 1) * ratio
+                (pdfPageHeight - pageMarginBottom - 6) * ratio
               );
             } else if (index === 1) {
               imageSectionHeight = floor(
@@ -142,7 +142,7 @@ const DownloadButton = () => {
 
           // pdfDoc.rect(145, 0, 65, 8);
           pdfDoc.link(145, 0, 65, 8, {
-            url: "https://kernel-dang.github.io/my-cv/",
+            url: "https://krnldng.github.io/my-cv/",
           });
 
           // pdfDoc.rect(155, 92, 50, 6);
@@ -152,17 +152,12 @@ const DownloadButton = () => {
 
           // pdfDoc.rect(155, 100, 50, 6);
           pdfDoc.link(155, 100, 50, 6, {
-            url: "https://www.facebook.com/kernel.dang",
-          });
-
-          // pdfDoc.rect(155, 107, 50, 6);
-          pdfDoc.link(155, 107, 50, 6, {
             url: "https://www.linkedin.com/in/kernel-dang",
           });
 
           pdfDoc.setPage(2);
           // pdfDoc.rect(189, 144, 13, 3);
-          pdfDoc.link(189, 150, 13, 3, {
+          pdfDoc.link(189, 144, 13, 3, {
             url: "https://www.linkedin.com/in/kernel-dang/#recommendations",
           });
 

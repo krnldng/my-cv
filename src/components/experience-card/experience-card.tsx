@@ -1,6 +1,8 @@
-import { map } from 'lodash';
-import { Experience } from '../../model/experience';
-import { Card } from '../card/card';
+import { map } from "lodash";
+import { Experience } from "../../model/experience";
+import { Card } from "../card/card";
+import { PiBriefcase as _PiBriefcase } from "react-icons/pi";
+const PiBriefcase = _PiBriefcase as any;
 interface ExperienceCardProps {
   Experience: Experience;
 }
@@ -9,10 +11,15 @@ export const ExperienceCard = ({
 }: ExperienceCardProps) => {
   return (
     <Card>
-      <div className="font-medium">
-        <span>{period}</span>
-        <span>:&nbsp;</span>
-        <span>{companyName}</span>
+      <div className="flex items-center gap-2 font-medium relative">
+        <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 absolute -left-[23px] border-2 border-[#7f8c8d]">
+          <PiBriefcase />
+        </div>
+        <div className="relative left-4">
+          <span>{period}</span>
+          <span>:&nbsp;</span>
+          <span>{companyName}</span>
+        </div>
       </div>
       <div className="flex flex-col gap-2">
         {map(projects, ({ name, description, role, teamSize, technology }) => {
