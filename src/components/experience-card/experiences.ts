@@ -2,17 +2,24 @@ import { Experience } from "../../model/experience";
 
 export const experiences: Experience[] = [
   {
-    companyName: "Restaff (Freelance)",
-    period: "6/2025 - 2/2026",
+    companyName: "Restaff",
+    period: "6/2025 - Present",
     projects: [
+      {
+        name: "Business Management System (BMS)",
+        description:
+          "This project is for digitalizing the business process at Restaff from contracting to invoicing and revenue management. Visualize data so it can help stakeholder can catch up the profit and gross margin",
+        teamSize: 1,
+        role: "Working as solo developer from get requirement from CEO to break it down to features and implementing. I use Claude as my partner to brainstorming and outline idea and implement steps.",
+        technology: "ASP.NET, Azure, Postgres, Ant Design",
+      },
       {
         name: "Uphead - CRM",
         description:
           "Uphead - CRM is a CRM system offers features such as customer-contact management, purchase/sale order management,... It also includes reporting and analytics capabilities to help agencies monitor their performance and make data-driven decisions.",
         teamSize: 5,
-        role: "I am fully responsible for migrating the legacy MVC application to modern Angular 20 framework. I applied many coding design patterns to ensure the code base is readable and maintainable, leverage almost modern features of Angular framework.",
-        technology:
-          "ASP.NET Restful API, Azure, SQL Server, Angular 20, PrimeNG",
+        role: "I am fully responsible for migrating the legacy MVC application to modern Angular 20 framework and ASP.NET Core Restful API. Within this role, I applied latest Angular techniques to create high performance UI and maintainable source code.",
+        technology: "ASP.NET, Azure, SQL Server, Angular 20, PrimeNG",
       },
     ],
   },
@@ -26,8 +33,7 @@ export const experiences: Experience[] = [
           "This a digital transformation project to manage the budget and resources for government. The system help customer to manage the process from proposal, approval, budget allocation, expense tracking and reporting.",
         teamSize: "40-50",
         role: "As Solution Architect, I have responsibilities to suggest technical solutions, design system architecture, review code quality, ensure best practices, and mentor team members to enhance their skills. Additionally, I actively participate in requirement analysis and collaborate closely with customers to deliver optimal solutions.",
-        technology:
-          "ASP.NET Restful API, Azure, SQL Server, React, and Beef Framework",
+        technology: "ASP.NET, Azure, SQL Server, React, and Beef Framework",
       },
     ],
   },
@@ -42,7 +48,7 @@ export const experiences: Experience[] = [
         teamSize: 43,
         role: "As a Technical Advisor, I work closely with customers to break down requirements, ensure that the product aligns with reality, provide estimations, write documents, train new team members, and offer advice to overcome obstacles.",
         technology:
-          "ASP.NET Restful API, Azure, Dapper, SQL Server, React/Preact, D3.js, Snabdom, NodeJS",
+          "ASP.NET, Azure, Dapper, SQL Server, React/Preact, D3.js, Snabdom, NodeJS",
       },
     ],
   },

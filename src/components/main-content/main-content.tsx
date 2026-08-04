@@ -48,9 +48,9 @@ export const MainContent = () => {
         {
           root: null,
           threshold: 0.1,
-        }
+        },
       ),
-    []
+    [],
   );
 
   useEffect(() => {
@@ -82,11 +82,15 @@ export const MainContent = () => {
             various domains, including oil and gas, healthcare, hospitality,
             multimedia processing, and digital transformation for enterprises.
             <br></br>
-            My core competencies include .NET (C#), TypeScript, ReactJS,
-            Angular, SQL, Azure Cloud Platform, problem-solving, critical
-            thinking, and performance optimization. I am passionate about
-            mentoring and knowledge sharing. I focus on delivering high-quality
-            products while staying current with the latest technology trends.
+            My core competencies encompass .NET (C#), TypeScript, ReactJS,
+            Angular, SQL, and the Azure cloud platform, complemented by strong
+            analytical thinking, problem-solving, and performance optimization
+            skills. I am committed to mentoring and knowledge sharing, and to
+            delivering high-quality products while remaining current with
+            emerging technology trends. I am presently pursuing a Master's
+            degree in Software Engineering with a specialization in Artificial
+            Intelligence, in order to establish the theoretical foundation and
+            practical expertise required to apply AI across industry domains.
           </div>
         </Section>
         <Section title="Education" iconUrl={graduateCapIconUrl}>
@@ -98,7 +102,9 @@ export const MainContent = () => {
                     12/2025 - 2027: Studying Master of Software Engineering in
                     AI
                   </div>
-                  <div className="font-medium">FPT University</div>
+                  <div className="font-medium">
+                    FPT School of Business and Technology - FPT University
+                  </div>
                 </div>
               </Card>
               <Card>
@@ -127,10 +133,6 @@ export const MainContent = () => {
               </div>
               <div className="flex flex-row gap-2">
                 <img src={badgeIconUrl} className="size-6"></img>
-                <span>Certified good volunteer in green summer</span>
-              </div>
-              <div className="flex flex-row gap-2">
-                <img src={badgeIconUrl} className="size-6"></img>
                 <span>Second prize in school-level chess</span>
               </div>
               <div className="flex flex-row gap-2">
@@ -148,7 +150,7 @@ export const MainContent = () => {
                 return (
                   <ExperienceCard Experience={experience}></ExperienceCard>
                 );
-              }
+              },
             )}
           </div>
         </Section>
