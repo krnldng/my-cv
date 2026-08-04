@@ -57,7 +57,7 @@ const DownloadButton = () => {
         try {
           setDownloading(true);
           var element = document.getElementById(
-            "element-to-print"
+            "element-to-print",
           ) as HTMLDivElement;
 
           // I see the quality of html-to-image is better than html2canvas
@@ -85,15 +85,19 @@ const DownloadButton = () => {
               imageSectionHeight = imageHeight - previousImageHeight; // remain content
             } else if (index === 0) {
               imageSectionHeight = floor(
-                (pdfPageHeight - pageMarginBottom - 6) * ratio
+                (pdfPageHeight - pageMarginBottom - 6) * ratio,
               );
             } else if (index === 1) {
               imageSectionHeight = floor(
-                (pdfPageHeight - pageMarginBottom - pageMarginTop - 4) * ratio
+                (pdfPageHeight - pageMarginBottom - pageMarginTop) * ratio,
+              );
+            } else if (index === 2) {
+              imageSectionHeight = floor(
+                (pdfPageHeight - pageMarginBottom - pageMarginTop + 1) * ratio,
               );
             } else {
               imageSectionHeight = floor(
-                (pdfPageHeight - pageMarginBottom - pageMarginTop) * ratio
+                (pdfPageHeight - pageMarginBottom - pageMarginTop) * ratio,
               );
             }
 
@@ -102,12 +106,12 @@ const DownloadButton = () => {
                 0,
                 previousImageHeight,
                 imageWidth,
-                imageSectionHeight
+                imageSectionHeight,
               ),
               0,
               index === 0 ? 0 : pageMarginTop,
               pdfPageWidth,
-              imageSectionHeight / ratio
+              imageSectionHeight / ratio,
             );
 
             previousImageHeight += imageSectionHeight;
@@ -128,12 +132,12 @@ const DownloadButton = () => {
               680,
               1180,
               rectImageWidth,
-              rectImageHeight
+              rectImageHeight,
             ),
             145,
             pageMarginTop,
             rectImageWidth / ratio,
-            rectImageHeight / ratio
+            rectImageHeight / ratio,
           );
 
           // add links to pdf
@@ -219,7 +223,7 @@ const ToggleParticles = () => {
       type="button"
       onClick={() => {
         const particles = document.querySelector(
-          "#particles-js"
+          "#particles-js",
         ) as HTMLElement;
         if (particles) {
           particles.style.display =
