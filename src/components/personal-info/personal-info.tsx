@@ -1,26 +1,26 @@
 import birthdayCakeIcon from "../../assets/birthday-cake.png";
 import styles from "./personal-info.module.css";
 const { statusContainer } = styles;
-import openLabelIconUrl from "../../assets/open-sign.png";
-import closeLabelIconUrl from "../../assets/closed-sign.png";
+// import openLabelIconUrl from "../../assets/open-sign.png";
+// import closeLabelIconUrl from "../../assets/closed-sign.png";
 import { Transition } from "react-transition-group";
 import { useEffect, useState } from "preact/hooks";
 
-const openLabelTransition = {
-  entering: { rotate: "y 360deg" },
-  entered: { rotate: "y 360deg", zIndex: 2 },
-  exiting: {},
-  exited: {},
-  unmounted: {},
-} as const;
+// const openLabelTransition = {
+//   entering: { rotate: "y 360deg" },
+//   entered: { rotate: "y 360deg", zIndex: 2 },
+//   exiting: {},
+//   exited: {},
+//   unmounted: {},
+// } as const;
 
-const closeLabelTransition = {
-  entering: { rotate: "y 180deg" },
-  entered: { rotate: "y 180deg", zIndex: 1 },
-  exiting: {},
-  exited: {},
-  unmounted: {},
-} as const;
+// const closeLabelTransition = {
+//   entering: { rotate: "y 180deg" },
+//   entered: { rotate: "y 180deg", zIndex: 1 },
+//   exiting: {},
+//   exited: {},
+//   unmounted: {},
+// } as const;
 
 export const PersonalInfo = () => {
   const [inProp, setInProp] = useState(false);
@@ -72,8 +72,8 @@ export const PersonalInfo = () => {
             );
           }}
         </Transition>
-        <div className="flex flex-col items-center">
-          <div className="font-medium text-nowrap text-center">
+        <div className="flex flex-col items-start">
+          <div className="font-medium text-nowrap">
             Fullstack Software Engineer
           </div>
           <div className="text-nowrap text-center">
