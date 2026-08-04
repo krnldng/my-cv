@@ -46,7 +46,7 @@ export const PersonalInfo = () => {
 
       <div className={statusContainer}>
         <Transition in={inProp} timeout={500}>
-          {(state) => {
+          {(_state) => {
             return (
               <div className="relative">
                 {/* <img
