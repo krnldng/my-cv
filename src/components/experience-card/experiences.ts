@@ -8,17 +8,17 @@ export const experiences: Experience[] = [
       {
         name: "Business Management System (BMS)",
         description:
-          "This project is for digitalizing the business process at Restaff from contracting to invoicing and revenue management. Visualize data so it can help stakeholder can catch up the profit and gross margin",
+          "This project digitalizes Restaff's end-to-end business process, covering contract management, invoicing, and revenue management. It provides data visualization that enables stakeholders to monitor profit and gross margin.",
         teamSize: 1,
-        role: "Working as solo developer from get requirement from CEO to break it down to features and implementing. I use Claude as my partner to brainstorming and outline idea and implement steps.",
+        role: "Engaged as a freelancer and sole contributor, responsible for the entire delivery lifecycle: translating the CEO's vision into a defined feature set and implementing it end to end. I leveraged Claude as a collaborative partner for brainstorming, solution outlining, and implementation planning.",
         technology: "ASP.NET, Azure, Postgres, Ant Design",
       },
       {
         name: "Uphead - CRM",
         description:
-          "Uphead - CRM is a CRM system offers features such as customer-contact management, purchase/sale order management,... It also includes reporting and analytics capabilities to help agencies monitor their performance and make data-driven decisions.",
+          "Uphead - CRM is a customer relationship management system providing capabilities such as customer and contact management and purchase/sales order management. It further incorporates reporting and analytics features that enable agencies to monitor performance and make data-driven decisions.",
         teamSize: 5,
-        role: "I am fully responsible for migrating the legacy MVC application to modern Angular 20 framework and ASP.NET Core Restful API. Within this role, I applied latest Angular techniques to create high performance UI and maintainable source code.",
+        role: "Engaged as a freelancer with full ownership of migrating the legacy MVC application to a modern Angular 20 front end and an ASP.NET Core RESTful API. In this capacity, I applied current Angular practices to deliver a high-performance user interface and a maintainable codebase.",
         technology: "ASP.NET, Azure, SQL Server, Angular 20, PrimeNG",
       },
     ],
