@@ -11,6 +11,7 @@ import recommendationIconUrl from "../../assets/star.png";
 import languageIconUrl from "../../assets/language.png";
 import gearIconUrl from "../../assets/gear.png";
 import ibmBlockchainIconUrl from "../../assets/ibm_blockchain.png";
+import courseraIconUrl from "../../assets/coursera.png";
 import contactIconUrl from "../../assets/contact.png";
 import { Card } from "../card/card";
 import { ProgressBar } from "../progress-bar/progress-bar";
@@ -333,9 +334,21 @@ export const MainContent = () => {
           </div>
         </Section>
         <Section title="Other Certificates" iconUrl={certificateIconUrl}>
-          <div className="flex flex-row gap-2 items-center text-left">
-            <img src={ibmBlockchainIconUrl} class="size-14"></img>
-            <span className="font-medium">IBM Blockchain Essential</span>
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-row gap-2 items-center text-left">
+              <img src={ibmBlockchainIconUrl} class="size-14"></img>
+              <span className="font-medium">IBM Blockchain Essential</span>
+            </div>
+            <div className="flex flex-row gap-2 items-center text-left">
+              <img src={courseraIconUrl} class="size-14"></img>
+              <a
+                href="https://drive.google.com/file/d/1gTOe2ATyuHXVn9g1-RcmYPXHct0ioXfm/view?usp=sharing"
+                target="_blank"
+                className="font-medium"
+              >
+                Managing an Agile Team
+              </a>
+            </div>
           </div>
         </Section>
       </div>

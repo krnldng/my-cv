@@ -49,7 +49,7 @@ export const PersonalInfo = () => {
           {(state) => {
             return (
               <div className="relative">
-                <img
+                {/* <img
                   src={openLabelIconUrl}
                   className="size-10 relative"
                   style={{
@@ -57,8 +57,8 @@ export const PersonalInfo = () => {
                     transition: `rotate 1s ease-in-out`,
                     ...openLabelTransition[state],
                   }}
-                ></img>
-                <img
+                ></img> */}
+                {/* <img
                   src={closeLabelIconUrl}
                   className="size-10"
                   style={{
@@ -67,18 +67,18 @@ export const PersonalInfo = () => {
                     top: -35,
                     ...closeLabelTransition[state],
                   }}
-                ></img>
+                ></img> */}
               </div>
             );
           }}
         </Transition>
-        <div className="flex flex-col items-start">
-          <span className="font-medium text-nowrap">
+        <div className="flex flex-col items-center">
+          <div className="font-medium text-nowrap text-center">
             Fullstack Software Engineer
-          </span>
-          <span className="text-nowrap">
+          </div>
+          <div className="text-nowrap text-center">
             .Net (C#), ReactJS, Angular, TypeScript, Azure
-          </span>
+          </div>
         </div>
       </div>
     </div>
